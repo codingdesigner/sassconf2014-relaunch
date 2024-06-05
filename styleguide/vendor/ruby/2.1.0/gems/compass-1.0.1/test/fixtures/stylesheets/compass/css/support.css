@@ -1,0 +1,1 @@
+@-moz-keyframes foo{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes foo{0%{opacity:0}100%{opacity:1}}@keyframes foo{0%{opacity:0}100%{opacity:1}}.foo{-moz-animation:foo 1s;-webkit-animation:foo 1s;animation:foo 1s}

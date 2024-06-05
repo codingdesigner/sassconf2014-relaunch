@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="/styleguide/public/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+
+
+</head>
+<body class="manhattan styleguide styleguide_vendor styleguide_vendor_ruby styleguide_vendor_ruby_2">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="/styleguide/public/images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="/"><div class="rhombus-reset">Home</div></a>
+    <a href="/speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="/venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="/schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="/sponsors"><div class="rhombus-reset">Sponsors</div></a>
+    <a href="/code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <h1 id="listen-gem-versionhttpsbadgefuryiorblistenpnghttpbadgefuryiorblisten-build-statushttpssecuretravis-ciorgguardlistenpngbranchmasterhttptravis-ciorgguardlisten-dependency-statushttpsgemnasiumcomguardlistenpnghttpsgemnasiumcomguardlisten-code-climatehttpscodeclimatecomgithubguardlistenpnghttpscodeclimatecomgithubguardlisten-coverage-statushttpscoverallsioreposguardlistenbadgepngbranchmasterhttpscoverallsiorguardlisten">Listen <a href="http://badge.fury.io/rb/listen"><img alt="Gem Version" src="https://badge.fury.io/rb/listen.png" /></a> <a href="http://travis-ci.org/guard/listen"><img alt="Build Status" src="https://secure.travis-ci.org/guard/listen.png?branch=master" /></a> <a href="https://gemnasium.com/guard/listen"><img alt="Dependency Status" src="https://gemnasium.com/guard/listen.png" /></a> <a href="https://codeclimate.com/github/guard/listen"><img alt="Code Climate" src="https://codeclimate.com/github/guard/listen.png" /></a> <a href="https://coveralls.io/r/guard/listen"><img alt="Coverage Status" src="https://coveralls.io/repos/guard/listen/badge.png?branch=master" /></a></h1>
+
+<p>The Listen gem listens to file modifications and notifies you about the changes.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Works everywhere!</li>
+  <li>Supports watching multiple directories from a single listener.</li>
+  <li>OS-specific adapters for Mac OS X 10.6+, Linux, *BSD and Windows.</li>
+  <li>Automatic fallback to polling if OS-specific adapter doesn't work.</li>
+  <li>Detects file modification, addition and removal.</li>
+  <li>File content checksum comparison for modifications made under the same second.</li>
+  <li>Allows supplying regexp-patterns to ignore and filter paths for better results.</li>
+  <li>Tested on all Ruby environments via <a href="https://travis-ci.org/guard/listen">Travis CI</a>.</li>
+</ul>
+
+<h2 id="pending-features">Pending features</h2>
+
+<p>Still not implemented, pull requests are welcome.</p>
+
+<ul>
+  <li>Symlinks support. <a href="https://github.com/guard/listen/issues/25">#25</a></li>
+  <li>Signal handling. <a href="https://github.com/guard/listen/issues/105">#105</a></li>
+  <li>Non-recursive directory scanning. <a href="https://github.com/guard/listen/issues/111">#111</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<h3 id="using-bundler">Using Bundler</h3>
+
+<p>The simplest way to install Listen is to use Bundler.</p>
+
+<p>Add Listen to your Gemfile:</p>
+
+<p><code>ruby
+group :development do
+  gem 'listen'
+end
+</code></p>
+
+<p>and install it by running Bundler:</p>
+
+<p><code>bash
+$ bundle
+</code></p>
+
+<h3 id="install-the-gem-with-rubygems">Install the gem with RubyGems</h3>
+
+<p><code>bash
+$ gem install listen
+</code></p>
+
+<h3 id="on-windows">On Windows</h3>
+
+<p>If your are on Windows and using Ruby MRI &gt;= 1.9.2 you can try to use the <a href="https://github.com/Maher4Ever/wdm"><code>wdm</code></a> instead of polling.
+Please add the following to your Gemfile:</p>
+
+<p><code>ruby
+require 'rbconfig'
+gem 'wdm', '&gt;= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
+</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>There are <strong>two ways</strong> to use Listen:</p>
+
+<ol>
+  <li>Block API: Call <code>Listen.to</code>/<code>Listen.to!</code> with either a single directory or multiple directories, then define the <code>change</code> callback in a block.</li>
+  <li>"Object" API: Create a <code>listener</code> object and use it in a chainable way.</li>
+</ol>
+
+<h3 id="block-api">Block API</h3>
+
+<p>``` ruby
+# Listen to a single directory.
+Listen.to('dir/path/to/listen', :filter =&gt; /.rb$/, :ignore =&gt; %r{ignored/path/}) do |modified, added, removed|
+  # …
+end</p>
+
+<h1 id="listen-to-multiple-directories">Listen to multiple directories.</h1>
+<p>Listen.to('dir/to/awesome_app', 'dir/to/other_app', :filter =&gt; /.rb$/, :latency =&gt; 0.1) do |modified, added, removed|
+  # …
+end
+```</p>
+
+<h3 id="object-api">"Object" API</h3>
+
+<p><code>ruby
+listener = Listen.to('dir/path/to/listen')
+listener = listener.ignore(%r{^ignored/path/})
+listener = listener.filter(/\.rb$/)
+listener = listener.latency(0.5)
+listener = listener.force_polling(true)
+listener = listener.polling_fallback_message(false)
+listener = listener.force_adapter(Listen::Adapters::Linux)
+listener = listener.change(&amp;callback)
+listener.start
+</code></p>
+
+<p><strong>Note</strong>: All the "Object" API methods except <code>start</code>/<code>start!</code> return the listener
+and are thus chainable:</p>
+
+<p><code>ruby
+Listen.to('dir/path/to/listen')
+      .ignore(%r{^ignored/path/})
+      .filter(/\.rb$/)
+      .latency(0.5)
+      .force_polling(true)
+      .polling_fallback_message('custom message')
+      .change(&amp;callback)
+      .start
+</code></p>
+
+<h3 id="pauseunpause">Pause/Unpause</h3>
+
+<p>Listener can also easily be paused/unpaused:</p>
+
+<p><code>ruby
+listener = Listen.to('dir/path/to/listen')
+listener.start   # non-blocking mode
+listener.pause   # stop listening to changes
+listener.paused? # =&gt; true
+listener.unpause # start listening to changes again
+listener.stop    # stop completely the listener
+</code></p>
+
+<h2 id="changes-callback">Changes callback</h2>
+
+<p>Changes to the listened-to directories gets reported back to the user in a callback.
+The registered callback gets invoked, when there are changes, with <strong>three</strong> parameters:
+<code>modified_paths</code>, <code>added_paths</code> and <code>removed_paths</code> in that particular order.</p>
+
+<p>You can register a callback in two ways. The first way is by passing a block when calling
+the <code>Listen.to</code>/<code>Listen.to!</code> method or when initializing a listener object:</p>
+
+<p>```ruby
+Listen.to('path/to/app') do |modified, added, removed|
+  # This block will be called when there are changes.
+end</p>
+
+<h1 id="or-">or …</h1>
+
+<p>listener = Listen::Listener.new('path/to/app') do |modified, added, removed|
+  # This block will be called when there are changes.
+end</p>
+
+<p>```</p>
+
+<p>The second way to register a callback is by calling the <code>#change</code> method on a
+listener passing it a block:</p>
+
+<p>```ruby
+# Create a callback
+callback = Proc.new do |modified, added, removed|
+  # This proc will be called when there are changes.
+end</p>
+
+<p>listener = Listen.to('dir')
+listener.change(&amp;callback) # convert the callback to a block and register it</p>
+
+<p>listener.start
+```</p>
+
+<h3 id="paths-in-callbacks">Paths in callbacks</h3>
+
+<p>Listeners invoke callbacks passing them absolute paths by default:</p>
+
+<p><code>ruby
+# Assume someone changes the 'style.css' file in '/home/user/app/css' after creating
+# the listener.
+Listen.to('/home/user/app/css') do |modified, added, removed|
+  modified.inspect # =&gt; ['/home/user/app/css/style.css']
+end
+</code></p>
+
+<h4 id="relative-paths-in-callbacks">Relative paths in callbacks</h4>
+
+<p>When creating a listener for a <strong>single</strong> path (more specifically a <code>Listen::Listener</code> instance),
+you can pass <code>:relative_paths =&gt; true</code> as an option to get relative paths in
+your callback:</p>
+
+<p><code>ruby
+# Assume someone changes the 'style.css' file in '/home/user/app/css' after creating
+# the listener.
+Listen.to('/home/user/app/css', :relative_paths =&gt; true) do |modified, added, removed|
+  modified.inspect # =&gt; ['style.css']
+end
+</code></p>
+
+<p>Passing the <code>:relative_paths =&gt; true</code> option won't work when listening to multiple
+directories:</p>
+
+<p><code>ruby
+# Assume someone changes the 'style.css' file in '/home/user/app/css' after creating
+# the listener.
+Listen.to('/home/user/app/css', '/home/user/app/js', :relative_paths =&gt; true) do |modified, added, removed|
+  modified.inspect # =&gt; ['/home/user/app/css/style.css']
+end
+</code></p>
+
+<h2 id="options">Options</h2>
+
+<p>All the following options can be set through the <code>Listen.to</code>/<code>Listen.to!</code> params
+or via <a href="#object-api">"Object" API</a> methods:</p>
+
+<p>```ruby
+:ignore =&gt; %r{app/CMake/}, /.pid$/           # Ignore a list of paths (root directory or sub-dir)
+                                              # default: See DEFAULT_IGNORED_DIRECTORIES and DEFAULT_IGNORED_EXTENSIONS in Listen::DirectoryRecord</p>
+
+<p>:filter =&gt; /.rb$/, /.coffee$/               # Filter files to listen to via a regexps list.
+                                              # default: none</p>
+
+<p>:latency =&gt; 0.5                               # Set the delay (<strong>in seconds</strong>) between checking for changes
+                                              # default: 0.25 sec (1.0 sec for polling)</p>
+
+<p>:force_adapter =&gt; Listen::Adapters::Linux     # Force the use of a particular adapter class
+                                              # default: none</p>
+
+<p>:force_polling =&gt; true                        # Force the use of the polling adapter
+                                              # default: none</p>
+
+<p>:polling_fallback_message =&gt; 'custom message' # Set a custom polling fallback message (or disable it with false)
+                                              # default: "Listen will be polling for changes. Learn more at https://github.com/guard/listen#polling-fallback."</p>
+
+<p>:relative_paths =&gt; true                       # Enable the use of relative paths in the callback.
+                                              # default: false
+```</p>
+
+<h3 id="note-on-the-patterns-for-ignoring-and-filtering-paths">Note on the patterns for ignoring and filtering paths</h3>
+
+<p>Just like the unix convention of beginning absolute paths with the
+directory-separator (forward slash <code>/</code> in unix) and with no prefix for relative paths,
+Listen doesn't prefix relative paths (to the watched directory) with a directory-separator.</p>
+
+<p>Therefore make sure <em>NOT</em> to prefix your regexp-patterns for filtering or ignoring paths
+with a directory-separator, otherwise they won't work as expected.</p>
+
+<p>As an example: to ignore the <code>build</code> directory in a C-project, use <code>%r{build/}</code>
+and not <code>%r{/build/}</code>.</p>
+
+<p>Use <code>#filter!</code> and <code>#ignore!</code> methods to overwrites default patterns.</p>
+
+<h2 id="blocking-listening-to-changes">Blocking listening to changes</h2>
+
+<p>Calling <code>Listen.to</code> with a block doesn't block the current thread. If you want
+to block the current thread instead until the listener is stopped (which needs
+to be done from another thread), you can use <code>Listen.to!</code>.</p>
+
+<p>Similarly, if you're using the "Object" API, you can use <code>#start!</code> instead of <code>#start</code> to block the
+current thread until the listener is stopped.</p>
+
+<p>Here is an example of using a listener in the blocking mode:</p>
+
+<p>```ruby
+Listen.to!('dir/path/to/listen') # block execution</p>
+
+<h1 id="code-here-will-not-run-until-the-listener-is-stopped">Code here will not run until the listener is stopped</h1>
+
+<p>```</p>
+
+<p>Here is an example of using a listener started with the "Object" API in blocking mode:</p>
+
+<p>```ruby
+listener = Listen.to('dir/path/to/listen')
+listener.start! # block execution</p>
+
+<h1 id="code-here-will-not-run-until-the-listener-is-stopped-1">Code here will not run until the listener is stopped</h1>
+
+<p>```</p>
+
+<p><strong>Note</strong>: Using the <code>Listen.to!</code> helper-method with or without a callback-block
+will always start the listener right away and block execution of the current thread.</p>
+
+<h2 id="listen-adapters">Listen adapters</h2>
+
+<p>The Listen gem has a set of adapters to notify it when there are changes.
+There are 4 OS-specific adapters to support Mac, Linux, *BSD and Windows.
+These adapters are fast as they use some system-calls to implement the notifying function.</p>
+
+<p>There is also a polling adapter which is a cross-platform adapter and it will
+work on any system. This adapter is unfortunately slower than the rest of the adapters.</p>
+
+<p>The Listen gem will choose the best and working adapter for your machine automatically. If you
+want to force the use of the polling adapter, either use the <code>:force_polling</code> option
+while initializing the listener or call the <code>#force_polling</code> method on your listener
+before starting it.</p>
+
+<p>It is also possible to force the use of a particular adapter, by using the <code>:force_adapter</code>
+option.  This option skips the usual adapter choosing mechanism and uses the given
+adapter class instead.  The adapter choosing mechanism requires write permission
+to your watched directories and will needlessly load code, which isn't always desirable.</p>
+
+<h2 id="polling-fallback">Polling fallback</h2>
+
+<p>When a OS-specific adapter doesn't work the Listen gem automatically falls back to the polling adapter.
+Here are some things you could try to avoid the polling fallback:</p>
+
+<ul>
+  <li><a href="http://www.dropbox.com/downloading">Update your Dropbox client</a> (if used).</li>
+  <li>Increase latency. (Please <a href="https://github.com/guard/listen/issues/new">open an issue</a>
+if you think that default is too low.)</li>
+  <li>Move or rename the listened folder.</li>
+  <li>Update/reboot your OS.</li>
+</ul>
+
+<p>If your application keeps using the polling-adapter and you can't figure out why, feel free to <a href="https://github.com/guard/listen/issues/new">open an issue</a> (and be sure to <a href="https://github.com/guard/listen/blob/master/CONTRIBUTING.md">give all the details</a>).</p>
+
+<h2 id="development-dependency-statushttpsgemnasiumcomguardlistenpngbranchmasterhttpsgemnasiumcomguardlisten">Development <a href="https://gemnasium.com/guard/listen"><img alt="Dependency Status" src="https://gemnasium.com/guard/listen.png?branch=master" /></a></h2>
+
+<ul>
+  <li>Documentation hosted at <a href="http://rubydoc.info/github/guard/listen/master/frames">RubyDoc</a>.</li>
+  <li>Source hosted at <a href="https://github.com/guard/listen">GitHub</a>.</li>
+</ul>
+
+<p>Pull requests are very welcome! Please try to follow these simple rules if applicable:</p>
+
+<ul>
+  <li>Please create a topic branch for every separate change you make.</li>
+  <li>Make sure your patches are well tested. All specs must pass on <a href="https://travis-ci.org/guard/listen">Travis CI</a>.</li>
+  <li>Update the <a href="http://yardoc.org/">Yard</a> documentation.</li>
+  <li>Update the <a href="https://github.com/guard/listen/blob/master/README.md">README</a>.</li>
+  <li>Update the <a href="https://github.com/guard/listen/blob/master/CHANGELOG.md">CHANGELOG</a> for noteworthy changes (don't forget to run <code>bundle exec pimpmychangelog</code> and watch the magic happen)!</li>
+  <li>Please <strong>do not change</strong> the version number.</li>
+</ul>
+
+<p>For questions please join us in our <a href="http://groups.google.com/group/guard-dev">Google group</a> or on
+<code>#guard</code> (irc.freenode.net).</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+  <li><a href="https://github.com/netzpirat">Michael Kessler (netzpirat)</a> for having written the <a href="https://github.com/guard/listen/commit/1e457b13b1bb8a25d2240428ce5ed488bafbed1f">initial specs</a>.</li>
+  <li><a href="https://github.com/ttilley">Travis Tilley (ttilley)</a> for this awesome work on <a href="https://github.com/ttilley/fssm">fssm</a> &amp; <a href="https://github.com/thibaudgg/rb-fsevent">rb-fsevent</a>.</li>
+  <li><a href="https://github.com/nex3">Nathan Weizenbaum (nex3)</a> for <a href="https://github.com/nex3/rb-inotify">rb-inotify</a>, a thorough inotify wrapper.</li>
+  <li><a href="https://github.com/mat813">Mathieu Arnold (mat813)</a> for <a href="https://github.com/mat813/rb-kqueue">rb-kqueue</a>, a simple kqueue wrapper.</li>
+  <li><a href="https://github.com/stereobooster">stereobooster</a> for <a href="https://github.com/stereobooster/rb-fchange">rb-fchange</a>, windows support wouldn't exist without him.</li>
+  <li><a href="https://github.com/wycats">Yehuda Katz (wycats)</a> for <a href="https://github.com/wycats/vigilo">vigilo</a>, that has been a great source of inspiration.</li>
+</ul>
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+  <li><a href="https://github.com/thibaudgg">Thibaud Guillaume-Gentil</a> (<a href="http://twitter.com/thibaudgg">@thibaudgg</a>)</li>
+  <li><a href="https://github.com/Maher4Ever">Maher Sallam</a> (<a href="http://twitter.com/mahersalam">@mahersalam</a>)</li>
+</ul>
+
+<h2 id="contributors">Contributors</h2>
+
+<p><a href="https://github.com/guard/listen/contributors">https://github.com/guard/listen/contributors</a></p>
+
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>2014 SassConf Team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li>Michelle Martinez</li>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+    </ul>
+
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/codingdesigner/sassconf-pl"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="/styleguide/public/">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="/code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="/refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Stylesheets -->
+<script src="/javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="/javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>

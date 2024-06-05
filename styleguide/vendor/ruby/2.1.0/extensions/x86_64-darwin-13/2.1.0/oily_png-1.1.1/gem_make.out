@@ -1,0 +1,24 @@
+/Users/mason/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling color.c
+compiling oily_png_ext.c
+compiling operations.c
+compiling png_decoding.c
+compiling png_encoding.c
+compiling resampling.c
+resampling.c:182:17: warning: implicit conversion loses integer precision: 'long' to 'PIXEL' (aka 'unsigned int') [-Wshorten-64-to-32]
+    y_residue = interp_y[y];
+              ~ ^~~~~~~~~~~
+resampling.c:187:19: warning: implicit conversion loses integer precision: 'long' to 'PIXEL' (aka 'unsigned int') [-Wshorten-64-to-32]
+      x_residue = interp_x[x];
+                ~ ^~~~~~~~~~~
+2 warnings generated.
+linking shared-object oily_png/oily_png.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 oily_png.bundle ./.gem.20140930-64059-8744qw/oily_png
+installing default oily_png libraries
