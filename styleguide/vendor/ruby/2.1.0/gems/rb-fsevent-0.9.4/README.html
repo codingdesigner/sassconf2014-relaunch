@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="/styleguide/public/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+
+
+</head>
+<body class="manhattan styleguide styleguide_vendor styleguide_vendor_ruby styleguide_vendor_ruby_2">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="/styleguide/public/images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="/"><div class="rhombus-reset">Home</div></a>
+    <a href="/speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="/venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="/schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="/sponsors"><div class="rhombus-reset">Sponsors</div></a>
+    <a href="/code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <p><a href="https://codeclimate.com/github/thibaudgg/rb-fsevent"><img alt="Code Climate" src="https://codeclimate.com/badge.png" /></a>
+<a href="https://coderwall.com/ttilley"><img alt="endorse" src="https://api.coderwall.com/ttilley/endorsecount.png" /></a></p>
+
+<h1 id="rb-fsevent">rb-fsevent</h1>
+
+<p>Very simple &amp; usable Mac OSX FSEvents API</p>
+
+<ul>
+  <li>RubyCocoa not required!</li>
+  <li>Signals are working (really)</li>
+  <li>Tested on MRI 1.8.7 &amp; 1.9.3, RBX 2.0.0dev, JRuby</li>
+  <li>Tested on 10.6 -&gt; 10.8 (though 10.5 should work just as well)</li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<pre><code>gem install rb-fsevent
+</code></pre>
+
+<h3 id="re-compilation">re-compilation</h3>
+
+<p>rb-fsevent comes with a pre-compiled fsevent_watch binary supporting x86_64 and i386 on 10.6 and above. The binary is codesigned with my (Travis Tilley) Developer ID as an extra precaution when distributing pre-compiled code and contains an embedded plist describing its build environment. This should be sufficient for most users, but if you need to use rb-fsevent on 10.5 and/or on PPC then recompilation is necessary. This can be done by entering the installed gem's ext directory and running:</p>
+
+<pre><code>MACOSX_DEPLOYMENT_TARGET="10.5" CC=/usr/bin/gcc-4.2 rake ppc replace_exe
+</code></pre>
+
+<p>The following ENV vars are recognized:</p>
+
+<ul>
+  <li>CC</li>
+  <li>CFLAGS</li>
+  <li>ARCHFLAGS</li>
+  <li>MACOSX_DEPLOYMENT_TARGET</li>
+  <li>FWDEBUG (enables debug mode, printing an obscene number of informational
+messages to STDERR)</li>
+</ul>
+
+<h3 id="embedded-plist">embedded plist</h3>
+
+<p>You can retrieve the values in the embedded plist via the CLI:</p>
+
+<pre><code>fsevent_watch --show-plist
+</code></pre>
+
+<p>The output is essentially formatted as <code>"#{key}:\n  #{value}\n"</code> to make it easier to read than plist style xml. The result looks like this:</p>
+
+<pre><code>DTSDKName:
+  macosx10.5
+FSEWBuildTriple:
+  i386-apple-darwin10.8.0
+FSEWCC:
+  /usr/bin/gcc-4.2
+DTSDKPath:
+  /Developer/SDKs/MacOSX10.5.sdk
+FSEWCCVersion:
+  i686-apple-darwin10-gcc-4.2.1 (GCC) 4.2.1 (Apple Inc. build 5666) (dot 3)
+FSEWCFLAGS:
+  -fconstant-cfstrings -fno-strict-aliasing -Wall -mmacosx-version-min=10.5 -O3
+</code></pre>
+
+<p>If, for some perverse reason, you prefer to look at the xml… it can be retrieved via:</p>
+
+<pre><code>otool -s __TEXT __info_plist ./bin/fsevent_watch | grep ^0 | xxd -r -
+</code></pre>
+
+<h3 id="codesign">codesign</h3>
+
+<p>You can verify code signing information for a specific fsevent_watch via:</p>
+
+<pre><code>codesign -d -vvv ./bin/fsevent_watch
+</code></pre>
+
+<p>If you're using the pre-compiled binary, then the output should contain something to the effect of:</p>
+
+<pre><code>Authority=Developer ID Application: Travis Tilley
+Authority=Developer ID Certification Authority
+Authority=Apple Root CA
+Timestamp=Dec 31, 2012 12:49:13 PM
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="singular-path">Singular path</h3>
+
+<p>```ruby
+require 'rb-fsevent'</p>
+
+<p>fsevent = FSEvent.new
+fsevent.watch Dir.pwd do |directories|
+  puts "Detected change inside: #{directories.inspect}"
+end
+fsevent.run
+```</p>
+
+<h3 id="multiple-paths">Multiple paths</h3>
+
+<p>```ruby
+require 'rb-fsevent'</p>
+
+<p>paths = ['/tmp/path/one', '/tmp/path/two', Dir.pwd]</p>
+
+<p>fsevent = FSEvent.new
+fsevent.watch paths do |directories|
+  puts "Detected change inside: #{directories.inspect}"
+end
+fsevent.run
+```</p>
+
+<h3 id="multiple-paths-and-additional-options-as-a-hash">Multiple paths and additional options as a Hash</h3>
+
+<p>```ruby
+require 'rb-fsevent'</p>
+
+<p>paths = ['/tmp/path/one', '/tmp/path/two', Dir.pwd]
+options = {:latency =&gt; 1.5, :no_defer =&gt; true }</p>
+
+<p>fsevent = FSEvent.new
+fsevent.watch paths, options do |directories|
+  puts "Detected change inside: #{directories.inspect}"
+end
+fsevent.run
+```</p>
+
+<h3 id="multiple-paths-and-additional-options-as-an-array">Multiple paths and additional options as an Array</h3>
+
+<p>```ruby
+require 'rb-fsevent'</p>
+
+<p>paths = ['/tmp/path/one', '/tmp/path/two', Dir.pwd]
+options = ['–latency', 1.5, '–no-defer']</p>
+
+<p>fsevent = FSEvent.new
+fsevent.watch paths, options do |directories|
+  puts "Detected change inside: #{directories.inspect}"
+end
+fsevent.run
+```</p>
+
+<h2 id="options">Options</h2>
+
+<p>When defining options using a hash or hash-like object, it gets checked for validity and converted to the appropriate fsevent_watch commandline arguments array when the FSEvent class is instantiated. This is obviously the safest and preferred method of passing in options.</p>
+
+<p>You may, however, choose to pass in an array of commandline arguments as your options value and it will be passed on, unmodified, to the fsevent_watch binary when called.</p>
+
+<p>So far, the following options are supported:</p>
+
+<ul>
+  <li>:latency =&gt; 0.5 # in seconds</li>
+  <li>:no_defer =&gt; true</li>
+  <li>:watch_root =&gt; true</li>
+  <li>:since_when =&gt; 18446744073709551615 # an FSEventStreamEventId</li>
+  <li>:file_events =&gt; true</li>
+</ul>
+
+<h3 id="latency">Latency</h3>
+
+<p>The :latency parameter determines how long the service should wait after the first event before passing that information along to the client. If your latency is set to 4 seconds, and 300 changes occur in the first three, then the callback will be fired only once. If latency is set to 0.1 in the exact same scenario, you will see that callback fire somewhere closer to between 25 and 30 times.</p>
+
+<p>Setting a higher latency value allows for more effective temporal coalescing, resulting in fewer callbacks and greater overall efficiency… at the cost of apparent responsiveness. Setting this to a reasonably high value (and NOT setting :no_defer) is particularly well suited for background, daemon, or batch processing applications.</p>
+
+<p>Implementation note: It appears that FSEvents will only coalesce events from a maximum of 32 distinct subpaths, making the above completely accurate only when events are to fewer than 32 subpaths. Creating 300 files in one directory, for example, or 30 files in 10 subdirectories, but not 300 files within 300 subdirectories. In the latter case, you may receive 31 callbacks in one go after the latency period. As this appears to be an implementation detail, the number could potentially differ across OS revisions. It is entirely possible that this number is somehow configurable, but I have not yet discovered an accepted method of doing so.</p>
+
+<h3 id="nodefer">NoDefer</h3>
+
+<p>The :no_defer option changes the behavior of the latency parameter completely. Rather than waiting for $latency period of time before sending along events in an attempt to coalesce a potential deluge ahead of time, that first event is sent along to the client immediately and is followed by a $latency period of silence before sending along any additional events that occurred within that period.</p>
+
+<p>This behavior is particularly useful for interactive applications where that feeling of apparent responsiveness is most important, but you still don't want to get overwhelmed by a series of events that occur in rapid succession.</p>
+
+<h3 id="watchroot">WatchRoot</h3>
+
+<p>The :watch_root option allows for catching the scenario where you start watching "~/src/demo_project" and either it is later renamed to "~/src/awesome_sauce_3000" or the path changes in such a manner that the original directory is now at "~/clients/foo/iteration4/demo_project".</p>
+
+<p>Unfortunately, while this behavior is somewhat supported in the fsevent_watch binary built as part of this project, support for passing across detailed metadata is not (yet). As a result, you would not receive the appropriate RootChanged event and be able to react appropriately. Also, since the C code doesn't open watched directories and retain that file descriptor as part of path-specific callback metadata, we are unable to issue an F_GETPATH fcntl() to determine the directory's new path.</p>
+
+<p>Please do not use this option until proper support is added (or, even better, add it and submit a pull request).</p>
+
+<h3 id="sincewhen">SinceWhen</h3>
+
+<p>The FSEventStreamEventId passed in to :since_when is used as a base for reacting to historic events. Unfortunately, not only is the metadata for transitioning from historic to live events not currently passed along, but it is incorrectly passed as a change event on the root path, and only per-host event streams are currently supported. When using per-host event streams, the event IDs are not guaranteed to be unique or contiguous when shared volumes (firewire/USB/net/etc) are used on multiple macs.</p>
+
+<p>Please do not use this option until proper support is added, unless it's acceptable for you to receive that one fake event that's handled incorrectly when events transition from historical to live. Even in that scenario, there's no metadata available for determining the FSEventStreamEventId of the last received event.</p>
+
+<p>WARNING: passing in 0 as the parameter to :since_when will return events for every directory modified since "the beginning of time".</p>
+
+<h3 id="fileevents">FileEvents</h3>
+
+<p>Prepare yourself for an obscene number of callbacks. Realistically, an "Atomic Save" could easily fire maybe 6 events for the combination of creating the new file, changing metadata/permissions, writing content, swapping out the old file for the new may itself result in multiple events being fired, and so forth. By the time you get the event for the temporary file being created as part of the atomic save, it will already be gone and swapped with the original file. This and issues of a similar nature have prevented me from adding the option to the ruby code despite the fsevent_watch binary supporting file level events for quite some time now. Mountain Lion seems to be better at coalescing needless events, but that might just be my imagination.</p>
+
+<h2 id="debugging-output">Debugging output</h2>
+
+<p>If the gem is re-compiled with the environment variable FWDEBUG set, then fsevent_watch will be built with its various DEBUG sections defined, and the output to STDERR is truly verbose (and hopefully helpful in debugging your application and not just fsevent_watch itself). If enough people find this to be directly useful when developing code that makes use of rb-fsevent, then it wouldn't be hard to clean this up and make it a feature enabled by a commandline argument instead. Until somebody files an issue, however, I will assume otherwise.</p>
+
+<pre><code>append_path called for: /tmp/moo/cow/
+  resolved path to: /private/tmp/moo/cow
+
+config.sinceWhen    18446744073709551615
+config.latency      0.300000
+config.flags        00000000
+config.paths
+  /private/tmp/moo/cow
+
+FSEventStreamRef @ 0x100108540:
+   allocator = 0x7fff705a4ee0
+   callback = 0x10000151e
+   context = {0, 0x0, 0x0, 0x0, 0x0}
+   numPathsToWatch = 1
+   pathsToWatch = 0x7fff705a4ee0
+        pathsToWatch[0] = '/private/tmp/moo/cow'
+   latestEventId = -1
+   latency = 300000 (microseconds)
+   flags = 0x00000000
+   runLoop = 0x0
+   runLoopMode = 0x0
+
+FSEventStreamCallback fired!
+  numEvents: 32
+  event path: /private/tmp/moo/cow/1/a/
+  event flags: 00000000
+  event ID: 1023767
+  event path: /private/tmp/moo/cow/1/b/
+  event flags: 00000000
+  event ID: 1023782
+  event path: /private/tmp/moo/cow/1/c/
+  event flags: 00000000
+  event ID: 1023797
+  event path: /private/tmp/moo/cow/1/d/
+  event flags: 00000000
+  event ID: 1023812
+  [etc]
+</code></pre>
+
+<h2 id="note-about-ffi">Note about FFI</h2>
+
+<p>rb-fsevent doesn't use <a href="http://github.com/ffi/ffi">ruby-ffi</a> anymore because it sadly doesn't allow for catching Signals. You can still see the code in the <a href="http://github.com/thibaudgg/rb-fsevent/tree/ffi">ffi branch</a>.</p>
+
+<h2 id="development">Development</h2>
+
+<ul>
+  <li>Source hosted at <a href="http://github.com/thibaudgg/rb-fsevent">GitHub</a></li>
+  <li>Report issues/Questions/Feature requests on <a href="http://github.com/thibaudgg/rb-fsevent/issues">GitHub Issues</a></li>
+</ul>
+
+<p>Pull requests are quite welcome! Please ensure that your commits are in a topic branch for each individual changeset that can be reasonably isolated. It is also important to ensure that your changes are well tested… whether that means new tests, modified tests, or fixing a scenario where the existing tests currently fail. If you have rbenv and ruby-build, we have a helper task for running the testsuite in all of them:</p>
+
+<pre><code>rake spec:portability
+</code></pre>
+
+<p>The list of tested targets is currently:</p>
+
+<pre><code>%w[1.8.7-p371 1.9.3-p362 2.0.0-dev rbx-2.0.0-dev jruby-1.7.1]
+</code></pre>
+
+<h2 id="donations">Donations</h2>
+
+<p>rb-fsevent is truly free software. The license is quite liberal (you don't even have to contribute back your changes). If, however, you'd like to donate as a way of showing support for the project and its continued development:</p>
+
+<p><a href="https://coinbase.com/checkouts/5233986321e2217499bd6ef91f679aa4?c=rb-fsevent"><img alt="Donate Bitcoins" src="https://d2o7j92jk8qjiw.cloudfront.net/assets/buttons/donation_small-2d08f8cd93c98acf496e0411cc6a5262.png" /></a></p>
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+  <li><a href="http://github.com/ttilley">Travis Tilley</a></li>
+  <li><a href="http://github.com/thibaudgg">Thibaud Guillaume-Gentil</a></li>
+</ul>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>2014 SassConf Team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li>Michelle Martinez</li>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+    </ul>
+
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/codingdesigner/sassconf-pl"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="/styleguide/public/">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="/code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="/refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Stylesheets -->
+<script src="/javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="/javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>

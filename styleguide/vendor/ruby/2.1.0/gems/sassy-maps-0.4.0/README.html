@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="/styleguide/public/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+
+
+</head>
+<body class="manhattan styleguide styleguide_vendor styleguide_vendor_ruby styleguide_vendor_ruby_2">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="/styleguide/public/images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="/"><div class="rhombus-reset">Home</div></a>
+    <a href="/speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="/venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="/schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="/sponsors"><div class="rhombus-reset">Sponsors</div></a>
+    <a href="/code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <h1 id="sassy-maps-gem-versionhttpsbadgefuryiorbsassy-mapspnghttpbadgefuryiorbsassy-maps-build-statushttpstravis-ciorgteam-sasssassy-mapspngbranch0xxhttpstravis-ciorgteam-sasssassy-maps">Sassy Maps <a href="http://badge.fury.io/rb/sassy-maps"><img alt="Gem Version" src="https://badge.fury.io/rb/sassy-maps.png" /></a> <a href="https://travis-ci.org/Team-Sass/Sassy-Maps"><img alt="Build Status" src="https://travis-ci.org/Team-Sass/Sassy-Maps.png?branch=0.x.x" /></a></h1>
+<p>Sassy Maps adds a variety of functions aimed at helping you work with Sass 3.3 maps much easier.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+  <li><a href="#requirements">Requirements</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#using-sassy-maps">Using Sassy Maps</a></li>
+  <li><a href="#functions">Functions</a></li>
+  <li><a href="#optional-modules">Optional Modules</a>
+    <ul>
+      <li><a href="#memo">Memo</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>Sassy Maps is a Sass extension, so you're going to need Sass installed. If you do not already have Sass installed, please read <a href="http://sass-lang.com/install">Install Sass</a>. Sassy Maps 0.3.x requires <em>Sass 3.3.0</em> or higher.</p>
+
+<p><strong>It is HIGHLY RECOMMENDED that you run all Sass (or Compass if using it) commands through <a href="http://bundler.io/">Bundler</a></strong></p>
+
+<p>If the compiler you are using is not compatible with the above minimum versions, it will not compile correctly.</p>
+
+<p><strong>BE AWARE that CodeKit and most other GUI compilers <em>do not support Bundler</em> and are therefore NOT RECOMMENDED</strong></p>
+
+<h2 id="installation">Installation</h2>
+
+<p>The preferred way to install and use Sassy Maps is through Bundler. To do so, add the following to your Gemfile (Sass provided to ensure the correct versions are used):</p>
+
+<p><code>ruby
+gem "sass", "~&gt;3.3.0"
+gem "sassy-maps", "~&gt;0.3.2"
+</code></p>
+
+<p>Once you have done so, run <code>bundle install</code> to install your dependencies, and remember to run all of your compilation through <code>bundle exec</code>.</p>
+
+<p>You can also install Sassy Maps through <a href="http://bower.io/">Bower</a> as it has no Ruby requirements. To do so, run the following command:</p>
+
+<p><code>bash
+bower install sassy-maps --save-dev
+</code></p>
+
+<p><em>BE AWARE</em> that while you can install Sassy Maps through Bower, Sassy Maps still only works with Sass compilers that have full compatibility with Sass 3.3.x and greater. If using Compass, you are also going to need to add the folder using Compass's <a href="http://compass-style.org/help/tutorials/configuration-reference/"><code>add_import_path</code></a> config option instead of the standard <code>require</code>.</p>
+
+<h2 id="using-sassy-maps">Using Sassy Maps</h2>
+
+<p>If you already have a project made and you'd like to use Sassy Maps with it, add the following to your <code>config.rb</code> file:</p>
+
+<p><code>require 'sassy-maps'</code></p>
+
+<p>Then, add the following to your Sass file towards the top:</p>
+
+<p><code>@import "sassy-maps";</code></p>
+
+<h2 id="functions">Functions</h2>
+
+<ul>
+  <li><code>map-get-deep($map, $keys...)</code> - Returns the value of the final item in <code>$keys</code> from the map <code>$map</code>. Will return <code>null</code> if no value is present and will warn of errors in search (such as if an intermediate depth is <code>null</code> or not a <code>map</code>).</li>
+  <li><code>map-set($map, $key, $value)</code> - Returns a map that has the <code>$key</code> in <code>$map</code> set to the to given <code>$value</code>.</li>
+  <li><code>map-set-deep($map, $keys, $value)</code> - Returns a map that has the <code>$key</code> in <code>$map</code> set to the given <code>$value</code>. <code>$key</code> should be single-depth list of keys, for instance <code>map-set-deep($map, ('foo' 'bar' 'baz'), "Hello World")</code>.</li>
+  <li><code>map-to-string($map)</code> - Returns a string representation of the given <code>$map</code>.</li>
+</ul>
+
+<h2 id="optional-modules">Optional Modules</h2>
+
+<p>Sassy Maps comes with optional modules that extend upon the base functionality of Sassy Maps to provide additional map-based functionality. The following are optional modules available with Sassy Maps:</p>
+
+<ul>
+  <li><a href="#memo">Memo</a></li>
+</ul>
+
+<h3 id="memo">Memo</h3>
+
+<p>Memo is a <a href="http://en.wikipedia.org/wiki/Memoization">Memoization</a> framework for Sass. Designed with framework developers in mind, it makes it easy to store and retrieve the output of functions quickly and easily without needing to run the function again. For complex functions this should greatly speed up overall compilation time for repeat function calls with identical input.</p>
+
+<p>To use Memo, simply include <code>@import "memo";</code> and you're good to go (normal <a href="#installation">Sassy Maps installation</a> still applies). Memo comes with two functions:</p>
+
+<ul>
+  <li><code>memo-set($module, $key, $value)</code> - Sets a memoization <code>$key</code> to the given <code>$value</code> for the prescribed <code>$module</code> (framework). The function will return <code>true</code>. Also available as a mixin (<code>@include memo-set($module, $key, $value)</code>).</li>
+  <li><code>memo-get($module, $key)</code> - Returns the value of the memoization <code>$key</code> for the prescribed <code>$module</code>.</li>
+</ul>
+
+<p>Using Memo is fairly simple, just check to see if there is a memoization value for your key (and it's not <code>null</code>); if there is, return that, if not, run through the function, set the memoization, and return that result. The following example stores whether Memo is available in a variable and uses the function name as the memoization module, but if building a framework such as <a href="http://github.com/team-sass/breakpoint">Breakpoint</a>, that framework should be the name of the memoization module.</p>
+
+<p>```scss
+$Memo-Exists: function-exists(memo-get) and function-exists(memo-set);</p>
+
+<p>@function percentage($target, $context) {
+  @if $Memo-Exists {
+    $result: memo-get(percentage, $target $context);</p>
+
+<pre><code>@if $result != null {
+  @return $result;
+}   }
+</code></pre>
+
+<p>$result: $target / $context * 100%;</p>
+
+<p>@if $Memo-Exists {
+    $holder: memo-set(percentage, $target $context, $result);
+  }</p>
+
+<p>@return $result;
+}</p>
+
+<p>$half: percentage(20px, 40px); // No memoization exists, will run through the function
+$half-again: percentage(20px, 40px); // Memoization exists, will just return that result
+```</p>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>2014 SassConf Team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li>Michelle Martinez</li>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+    </ul>
+
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/codingdesigner/sassconf-pl"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="/styleguide/public/">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="/code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="/refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Stylesheets -->
+<script src="/javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="/javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>

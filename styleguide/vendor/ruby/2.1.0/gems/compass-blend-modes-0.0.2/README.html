@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>SassConf</title>
+  <meta charset="UTF-8">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link href="/styleguide/public/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6578432/743904/css/fonts.css"/>
+
+
+
+</head>
+<body class="manhattan styleguide styleguide_vendor styleguide_vendor_ruby styleguide_vendor_ruby_2">
+<header class="header">
+  <div class="photo-wrapper"></div>
+  <div class="rhombus-grid-wrapper layer">
+    <svg class="rhombus-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 420" enable-background="new 0 0 1000 420" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <path id="rhombuses" d="M166.8 145.4H65.4L83.2 44h101.4L166.8 145.4zM307.2 44H205.8L188 145.4h101.4L307.2 44zM429.7 44H328.3l-17.9 101.4h101.4L429.7 44zM552.3 44H450.9l-17.9 101.4h101.4L552.3 44zM675.8 44H574.5l-17.9 101.4H658L675.8 44zM798.3 44H697l-17.9 101.4h101.4L798.3 44zM920.9 44H819.6l-17.9 101.4h101.4L920.9 44zM162.8 167.6H61.4L43.6 269H145L162.8 167.6zM285.4 167.6H184L166.2 269h101.4L285.4 167.6zM408 167.6H306.6L288.8 269h101.4L408 167.6zM530.6 167.6H429.2L411.4 269h101.3L530.6 167.6zM654 167.6H552.7L534.8 269h101.4L654 167.6zM776.6 167.6H675.3L657.4 269h101.4L776.6 167.6zM899.2 167.6H797.9L780 269h101.3L899.2 167.6zM141 291H39.6L21.8 392.4h101.4L141 291zM263.6 291H162.2l-17.9 101.4h101.4L263.6 291zM386.1 291H284.7l-17.9 101.4h101.4L386.1 291zM508.7 291H407.3l-17.9 101.4h101.4L508.7 291zM632.3 291H530.9L513 392.4h101.4L632.3 291zM754.8 291H653.4l-17.9 101.4h101.4L754.8 291zM877.3 291H776l-17.9 101.4h101.4L877.3 291z"></path>
+  </defs>
+  <clipPath id="nyc-image">
+    <use xlink:href="#rhombuses" overflow="visible"></use>
+  </clipPath>
+  <g clip-path="url(#nyc-image)">
+    <image overflow="visible" enable-background="new" width="1000" height="420" xlink:href="/styleguide/public/images/manhattan-zeldman-1800x756.jpg"></image>
+  </g>
+</svg>
+
+  </div>
+  <div class="logo-nav layer">
+    <div class="logo-dates">
+      <a href="/" class="logo-lockup logo-rhombus">
+  <div class="rhombus-left">
+    <div class="rhombus-left-reset">Sass Conf</div>
+  </div>
+</a>
+
+      <h2 class="rhombus">
+        <div class="rhombus-reset">October 2-4, 2014</div>
+      </h2>
+    </div>
+  </div>
+</header>
+
+
+<div id="content">
+  <nav class="m-main-nav">
+  <label class="menu-button"><input type="checkbox">
+    <a href="/"><div class="rhombus-reset">Home</div></a>
+    <a href="/speakers"><div class="rhombus-reset">Speakers</div></a>
+    <a href="/#buy-now"><div class="rhombus-reset">Get Tickets</div></a>
+    <a href="/venue"><div class="rhombus-reset">Venue</div></a>
+    <a href="/schedule"><div class="rhombus-reset">Schedule</div></a>
+    <a href="/sponsors"><div class="rhombus-reset">Sponsors</div></a>
+    <a href="/code-of-conduct"><div class="rhombus-reset">Code of Conduct</div></a>
+    <div class="button"><div class="rhombus-reset">Menu</div></div>
+  </label>
+</nav>
+
+  <h1 id="scss-blend-modes">SCSS Blend Modes</h1>
+<p>CSS doesn't natively support color blending the way that Photoshop does. This library attempts to fake that by allowing you to blend a foreground color with a background color in order to approximate color blending. This not a dynamic blend; you can't use this to blend a color with an image. This was originally intended for use with the <a href="https://github.com/heygrady/compass-photoshop-drop-shadow">Compass Photoshop Drop Shadow Plugin</a> but it proved impractical to integrate.</p>
+
+<h2 id="a-note-on-real-css3-blend-modes">A Note on Real CSS3 Blend Modes</h2>
+<p>Adobe has been working on a <a href="http://www.w3.org/TR/compositing/">W3C spec</a> to <a href="http://blogs.adobe.com/webplatform/2012/04/04/bringing-blending-to-the-web/">add blend modes to CSS3</a>. However, this has <a href="http://css3clickchart.com/#blending-modes">not been implemented in any browser</a>. This library is <strong>not</strong> a polyfill for those blend modes. A polyfill for real, dynamic blend modes will require SVG or JavaScript + Canvas.</p>
+
+<h2 id="a-note-on-color-blending">A Note on Color Blending</h2>
+<p>The included functions are based on <a href="https://github.com/jseidelin/pixastic/blob/master/actions/blend.js">blend.js</a> from the <a href="http://www.pixastic.com/lib/">Pixastic Image Processing Library</a>. I chose this library because JavaScript is easy enough to read and the blend modes seemed to match closely with what Photoshop offered. Additionally, a <a href="http://photoblogstop.com/photoshop/photoshop-blend-modes-explained">detailed explaination of Photoshop blend modes</a> was used as a reference as well as the <a href="http://en.wikipedia.org/wiki/Blend_modes">Wikipedia article on blend modes</a>.</p>
+
+<p>These blend mode functions are not magic. In Photoshop, the blend mode functions are applied dynamically between two layers in order to create a pixel-by-pixel blend. In CSS they can only be used to combine two solid colors together. Blend modes can be useful in times when a Photoshop design implements a blend mode on an element, like a drop shadow, that is over a mostly solid background. Choosing a dominant background color and a solid foreground color may allow for the apearance of a dynamically blended color.</p>
+
+<h2 id="installation">Installation</h2>
+<p>#### Install the Ruby Gem.
+<code>
+gem install compass-blend-modes
+</code></p>
+
+<h4 id="existing-compass-projects">Existing Compass Projects</h4>
+<p>You can include it in any existing Compass project by including the plugin in your config.rb file.</p>
+
+<p><code>ruby
+# Require any additional compass plugins here.
+require 'compass-blend-modes'
+</code></p>
+
+<h4 id="new-compass-projects">New Compass Projects</h4>
+<p>You can install the plugin as part of a new Compass project.</p>
+
+<p><code>
+compass create my_project -r compass-blend-modes
+</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<p><code>scss
+@import 'blend-modes';
+</code></p>
+
+<h3 id="examples">Examples</h3>
+
+<p>```scss
+// make sure the functions are imported
+@import 'blend-modes';</p>
+
+<p>// Solid background
+.multiply {
+	background-color: blend-multiply(#7FFFD4, #DEB887);
+}</p>
+
+<p>// RGBa background
+.multiply {
+	background-color: blend-multiply(rgba(#7FFFD4, 0.5), rgba(#DEB887, 0.5));
+}
+```</p>
+
+<h2 id="blending-functions">Blending Functions</h2>
+<p>All functions expect a color as the <code>$foreground</code> and <code>$background</code> colors. The colors can be any hex, <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#rgb-instance_method">rgb</a>, <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#rgba-instance_method">rgba</a>, <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#hsl-instance_method">hsl</a>, or <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#hsla-instance_method">hsla</a> color supported by Sass. Blending functions work by combining the colors from the top-most layer, the <code>$foreground</code>, with the lower layer, the <code>$background</code>.</p>
+
+<ul>
+  <li><strong>blend-normal(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong> - Normal is used primarily to preserve the opacity after the blending has been applied to the RGB values.</li>
+  <li><strong>blend-multiply(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-lighten(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-darken(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-darkercolor(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong> - Not found in Photoshop.</li>
+  <li><strong>blend-lightercolor(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong> - Not found in Photoshop.</li>
+  <li><strong>blend-lineardodge(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-linearburn(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-difference(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-screen(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-exclusion(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-overlay(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-softlight(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-hardlight(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-colordodge(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-colorburn(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-linearlight(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-vividlight(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-pinlight(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-hardmix(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-colorblend(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-dissolve(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong> - Not implemented. Dissolve treats transparency as a pixel pattern and applies a diffusion dither pattern.</li>
+  <li><strong>blend-divide(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-hue(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-luminosity(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-saturation(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-subtract(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+</ul>
+
+<h2 id="hsv-functions">HSV Functions</h2>
+<p>These functions are used to convert between RGB, HSL and HSV color formats. The HSV color format is not natively supported by CSS or Sass. These functions were taken directly from this <a href="https://gist.github.com/1069204">Gist</a>. HSV values are used to calculate the results for the <code>blend-colorblend</code>, <code>blend-hue</code>, <code>blend-luminosity</code> and <code>blend-saturation</code> functions.</p>
+
+<ul>
+  <li><strong>hsv-to-hsl(</strong> <em>$h</em>, [ <em>$s: 0</em>, <em>$v: 0</em> ] <strong>)</strong> - Converts a HSV color values into HSL color values. <code>$h</code> can be a list of three values representing <code>$h</code>, <code>$s</code> and <code>$v</code>.</li>
+  <li><strong>hsl-to-hsv(</strong> <em>$h</em>, [ <em>$ss: 0</em>, <em>$ll: 0</em> ] <strong>)</strong> - Converts a HSL color values into HSV color values. <code>$h</code> can be a list of three values representing <code>$h</code>, <code>$ss</code> and <code>$ll</code>.</li>
+  <li><strong>color-to-hsv(</strong> <em>$color</em> )** - Converts a <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Color.html">Sass Color</a> into a <a href="http://sass-lang.com/docs/yardoc/Sass/Script/List.html">list</a> HSV color values.</li>
+  <li><strong>hsv-to-color(</strong> <em>$h</em>, [* $s: 0<em>, *$v: 0</em> ] <strong>)</strong> - Converts a list of HSV color values into a Sass Color. <code>$h</code> can be a list of three values representing <code>$h</code>, <code>$s</code> and <code>$v</code></li>
+</ul>
+
+<h2 id="internal-functions">Internal Functions</h2>
+<p>These functions are used to save redundant code and are not meant to be used directly. These functions perform the blending operation on a single r, g or b value.</p>
+
+<p><strong>NOTE:</strong> These functions are not intended to be used directly.</p>
+
+<ul>
+  <li><strong>blend-lighten-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-darken-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-lineardodge-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-linearburn-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-screen-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-exclusion-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-overlay-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-softlight-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-hardlight-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-colordodge-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-colorburn-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-linearlight-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-vividlight-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-pinlight-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-hardmix-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+  <li><strong>blend-divide-color(</strong> <em>$foreground</em>, <em>$background</em> <strong>)</strong></li>
+</ul>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="logo-lockup"></div>
+
+
+    <ul>
+      <h4>2014 SassConf Team</h4>
+      <li><a href="https://twitter.com/itsmisscs">Claudina Sarahe</a></li>
+      <li><a href="https://twitter.com/Snugug">Sam Richard</a></li>
+      <li><a href="https://twitter.com/adekunleoduye">Adekunle Oduye</a></li>
+      <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
+      <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
+      <li>Michelle Martinez</li>
+      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+    </ul>
+
+    <ul>
+      <h4>Stay in touch</h4>
+      <li><a href="https://twitter.com/sassconf">@SassConf</a></li>
+      <li><a href="mailto:info@Sassconf.com">info@Sassconf.com</a></li>
+    </ul>
+
+    <p>&copy; 2014 SassConf. All rights reserved. Find an error or want to add something? Pull requests
+      are welcome over on <a href="https://github.com/codingdesigner/sassconf-pl"
+                             title="SassConf Design repo">GitHub</a>.
+      Kindly refer to our <a href="/styleguide/public/">styleguide</a>.</p>
+
+    <p>Manhattan <a
+        href="https://www.flickr.com/photos/zeldman/14275183690/in/photolist-nKs4nU-nKs3LJ-o2QM7u-nZU5Jb">photo by
+      Jeffery Zeldman</a>.</p>
+
+    <p>
+      SassConf is dedicated to a
+      <a href="/code-of-conduct">harassment-free</a>
+      and enjoyable conference experience for everyone.
+      <a href="/refund-policy">Refund policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Stylesheets -->
+<script src="/javascripts/bower_components/modernizr/modernizr.js" type="text/javascript"></script><script src="/javascripts/bower_components/jquery/dist/jquery.js" type="text/javascript"></script><script src="/javascripts/bower_components/eq.js/dist/eq.min.js" type="text/javascript"></script><script src="/javascripts/bower_components/moment/moment.js" type="text/javascript"></script><script src="/javascripts/bower_components/twix/bin/twix.js" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/javascripts/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/javascripts/widowtamer-min.js" type="text/javascript"></script><script src="/javascripts/bower_components/letteringjs/jquery.lettering.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>
