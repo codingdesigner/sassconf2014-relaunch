@@ -1,4 +1,4 @@
-/Users/mason/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb 
+/Users/gwen/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb
 creating Makefile
 
 make "DESTDIR=" clean

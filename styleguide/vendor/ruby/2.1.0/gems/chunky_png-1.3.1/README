@@ -69,7 +69,7 @@
   </label>
 </nav>
 
-  
+
 <h1 id="label-Chunky+PNG+%3Cimg+src%3D%22https%3A%2F%2Ftravis-ci.org%2Fwvanbergen%2Fchunky_png.png%3Fbranch%3Dmaster%22+alt%3D%22Build+Status%22+%2F%3E">Chunky PNG <a href="https://travis-ci.org/wvanbergen/chunky_png"><img src="https://travis-ci.org/wvanbergen/chunky_png.png?branch=master" alt="Build Status" /></a><span><a href="#label-Chunky+PNG+%3Cimg+src%3D%22https%3A%2F%2Ftravis-ci.org%2Fwvanbergen%2Fchunky_png.png%3Fbranch%3Dmaster%22+alt%3D%22Build+Status%22+%2F%3E">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
 
 <p>This library can read and write PNG files. It is written in pure Ruby for
@@ -148,7 +148,7 @@ in C, which  provides a massive speed boost to encoding and decoding.</p>
 <span class="ruby-identifier">png_stream</span>.<span class="ruby-identifier">each_chunk</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">chunk</span><span class="ruby-operator">|</span> <span class="ruby-identifier">p</span> <span class="ruby-identifier">chunk</span>.<span class="ruby-identifier">type</span> }
 </pre>
 
-<p>Also check out the following screencast by John Davison, which illustrates 
+<p>Also check out the following screencast by John Davison, which illustrates
 basic usage of the library: <a
 href="http://devcasts.co/ruby-chunky_png-a-great-gem-for-on-the-fly-png-manipulation">devcasts.co/ruby-chunky_png-a-great-gem-for-on-the-fly-png-manipulation</a>.</p>
 
@@ -195,7 +195,7 @@ Chunky GIF. Use Google if you want to know _why. :-)</p>
       <li><a href="https://twitter.com/bkrjames">Robert James</a></li>
       <li><a href="https://twitter.com/skyefaerie">Aisha Green</a></li>
       <li>Michelle Martinez</li>
-      <li><a href="https://twitter.com/codingdesigner">Mason Wendell</a></li>
+      <li><a href="https://twitter.com/codingdesigner">Gwen Wendell</a></li>
     </ul>
 
     <ul>
