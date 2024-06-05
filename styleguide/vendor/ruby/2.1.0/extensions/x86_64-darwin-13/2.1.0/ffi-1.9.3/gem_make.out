@@ -1,4 +1,4 @@
-/Users/mason/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb 
+/Users/gwen/.rvm/rubies/ruby-2.1.1/bin/ruby extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... yes
 checking for ffi_call() in -lffi... yes

@@ -1,18 +1,18 @@
 package configuration for libffi is not found
 have_header: checking for ffi.h... -------------------- no
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.2.1.0  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.2.1.0  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
-2: 
+2:
 3: int main(int argc, char **argv)
 4: {
 5:   return 0;
 6: }
 /* end */
 
-"/usr/bin/clang -E -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
+"/usr/bin/clang -E -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^
@@ -20,7 +20,7 @@ conftest.c:3:10: fatal error: 'ffi.h' file not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
-2: 
+2:
 3: #include <ffi.h>
 /* end */
 
@@ -28,7 +28,7 @@ checked program was:
 
 find_header: checking for ffi.h in /usr/local/include,/usr/include/ffi... -------------------- yes
 
-"/usr/bin/clang -E -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
+"/usr/bin/clang -E -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^
@@ -36,11 +36,11 @@ conftest.c:3:10: fatal error: 'ffi.h' file not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
-2: 
+2:
 3: #include <ffi.h>
 /* end */
 
-"/usr/bin/clang -E -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe -I/usr/local/include conftest.c -o conftest.i"
+"/usr/bin/clang -E -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe -I/usr/local/include conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^
@@ -48,15 +48,15 @@ conftest.c:3:10: fatal error: 'ffi.h' file not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
-2: 
+2:
 3: #include <ffi.h>
 /* end */
 
-"/usr/bin/clang -E -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe -I/usr/include/ffi conftest.c -o conftest.i"
+"/usr/bin/clang -E -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe -I/usr/include/ffi conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
-2: 
+2:
 3: #include <ffi.h>
 /* end */
 
@@ -64,13 +64,13 @@ checked program was:
 
 have_library: checking for ffi_call() in -lffi... -------------------- yes
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: #include <ffi.h>
- 4: 
+ 4:
  5: /*top*/
  6: extern int t(void);
  7: int main(int argc, char **argv)
@@ -78,7 +78,7 @@ checked program was:
  9:   if (argc > 1000000) {
 10:     printf("%p", &t);
 11:   }
-12: 
+12:
 13:   return 0;
 14: }
 15: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_call; return 0; }
@@ -88,7 +88,7 @@ checked program was:
 
 have_func: checking for ffi_prep_closure()... -------------------- yes
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_prep_closure'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return 0; }
                                                         ^
@@ -96,7 +96,7 @@ int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -104,13 +104,13 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return 0; }
 /* end */
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'ffi_prep_closure' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { ffi_prep_closure(); return 0; }
               ^
@@ -118,7 +118,7 @@ int t(void) { ffi_prep_closure(); return 0; }
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -126,7 +126,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { ffi_prep_closure(); return 0; }
@@ -136,7 +136,7 @@ checked program was:
 
 have_func: checking for ffi_raw_call()... -------------------- no
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_raw_call'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
                                                         ^
@@ -144,7 +144,7 @@ int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; 
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -152,13 +152,13 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
 /* end */
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'ffi_raw_call' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { ffi_raw_call(); return 0; }
               ^
@@ -171,7 +171,7 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -179,7 +179,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { ffi_raw_call(); return 0; }
@@ -189,21 +189,21 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- yes
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: warning: 'rb_thread_blocking_region' is deprecated [-Wdeprecated-declarations]
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
                                                         ^
-/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/intern.h:870:18: note: 'rb_thread_blocking_region' has been explicitly marked deprecated here
+/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/intern.h:870:18: note: 'rb_thread_blocking_region' has been explicitly marked deprecated here
 DEPRECATED(VALUE rb_thread_blocking_region(rb_blocking_function_t *func, void *data1,
                  ^
-/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0/ruby/config.h:114:52: note: expanded from macro 'DEPRECATED'
+/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0/ruby/config.h:114:52: note: expanded from macro 'DEPRECATED'
 #define DEPRECATED(x) __attribute__ ((deprecated)) x
                                                    ^
 1 warning generated.
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -211,7 +211,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
@@ -221,7 +221,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_with_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
                                                         ^
@@ -229,7 +229,7 @@ int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl;
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -237,13 +237,13 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
 /* end */
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_call_with_gvl' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_call_with_gvl(); return 0; }
               ^
@@ -251,7 +251,7 @@ int t(void) { rb_thread_call_with_gvl(); return 0; }
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -259,7 +259,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { rb_thread_call_with_gvl(); return 0; }
@@ -269,7 +269,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_without_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
                                                         ^
@@ -277,7 +277,7 @@ int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_g
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -285,13 +285,13 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
 /* end */
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_call_without_gvl(); return 0; }
               ^
@@ -299,7 +299,7 @@ int t(void) { rb_thread_call_without_gvl(); return 0; }
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -307,7 +307,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { rb_thread_call_without_gvl(); return 0; }
@@ -317,7 +317,7 @@ checked program was:
 
 have_func: checking for ffi_prep_cif_var()... -------------------- no
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_prep_cif_var'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return 0; }
                                                         ^
@@ -325,7 +325,7 @@ int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -333,13 +333,13 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return 0; }
 /* end */
 
-"/usr/bin/clang -o conftest -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/mason/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
+"/usr/bin/clang -o conftest -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/ruby/backward -I/Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0 -I. -I/usr/include/ffi  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/gwen/.rvm/rubies/ruby-2.1.1/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.2.1.0 -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'ffi_prep_cif_var' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { ffi_prep_cif_var(); return 0; }
               ^
@@ -352,7 +352,7 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
  1: #include "ruby.h"
- 2: 
+ 2:
  3: /*top*/
  4: extern int t(void);
  5: int main(int argc, char **argv)
@@ -360,7 +360,7 @@ checked program was:
  7:   if (argc > 1000000) {
  8:     printf("%p", &t);
  9:   }
-10: 
+10:
 11:   return 0;
 12: }
 13: int t(void) { ffi_prep_cif_var(); return 0; }

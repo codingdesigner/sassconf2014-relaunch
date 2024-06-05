@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Mason Wendell", "Sam Richard"]
+  s.authors = ["Gwen Wendell", "Sam Richard"]
   s.date = "2014-08-05"
   s.description = "Really simple media queries in Sass"
-  s.email = ["mason@thecodingdesigner.com", "sam@snug.ug"]
+  s.email = ["gwen@thecodingdesigner.com", "sam@snug.ug"]
   s.homepage = "https://github.com/Team-Sass/breakpoint"
   s.licenses = ["MIT", "GPL-2.0"]
   s.rubyforge_project = "breakpoint"

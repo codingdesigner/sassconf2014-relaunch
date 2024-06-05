@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Sam Richard", "Scott Kellum", "Mason Wendell"]
+  s.authors = ["Sam Richard", "Scott Kellum", "Gwen Wendell"]
   s.date = "2014-08-19"
   s.description = "Toolkit full of bits and bobs of awesome aimed at assisting in advanced styling with Sass"
-  s.email = ["sam@snug.ug", "scott@scottkellum.com", "mason@zivtech.com"]
+  s.email = ["sam@snug.ug", "scott@scottkellum.com", "gwen@zivtech.com"]
   s.homepage = "https://github.com/Snugug/toolkit"
   s.licenses = ["MIT", "GPL-2.0"]
   s.rubyforge_project = "toolkit"

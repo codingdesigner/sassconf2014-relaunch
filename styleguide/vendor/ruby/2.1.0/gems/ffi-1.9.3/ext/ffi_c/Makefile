@@ -11,12 +11,12 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0
+topdir = /Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0
+arch_hdrdir = /Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/mason/.rvm/rubies/ruby-2.1.1
+prefix = $(DESTDIR)/Users/gwen/.rvm/rubies/ruby-2.1.1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -76,25 +76,25 @@ RUBY_EXTCONF_H = extconf.h
 cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3 -fno-fast-math
 debugflags = -ggdb3
-warnflags = 
+warnflags =
 CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/usr/include/ffi
-DEFS     = 
+DEFS     =
 CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\"  -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
-ldflags  = -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib 
-dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib  
-ARCH_FLAG = 
+ldflags  = -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
+ARCH_FLAG =
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
 AR = ar
-EXEEXT = 
+EXEEXT =
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby.2.1.0
-RUBYW_INSTALL_NAME = 
+RUBYW_INSTALL_NAME =
 RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
@@ -118,31 +118,31 @@ TOUCH = exit >
 
 #### End of system configuration section. ####
 
-preload = 
+preload =
 
 libpath = . $(libdir) /usr/local/opt/libyaml/lib /usr/local/opt/readline/lib /usr/local/opt/libksba/lib /usr/local/opt/openssl/lib
 LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
-DEFFILE = 
+DEFFILE =
 
 CLEANFILES = mkmf.log
-DISTCLEANFILES = 
-DISTCLEANDIRS = 
+DISTCLEANFILES =
+DISTCLEANDIRS =
 
-extout = 
-extout_prefix = 
-target_prefix = 
-LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) -lffi  -lpthread -ldl -lobjc 
+extout =
+extout_prefix =
+target_prefix =
+LOCAL_LIBS =
+LIBS = $(LIBRUBYARG_SHARED) -lffi  -lpthread -ldl -lobjc
 ORIG_SRCS = AbstractMemory.c ArrayType.c Buffer.c Call.c ClosurePool.c DataConverter.c DynamicLibrary.c ffi.c Function.c FunctionInfo.c LastError.c LongDouble.c MappedType.c MemoryPointer.c MethodHandle.c Platform.c Pointer.c Struct.c StructByReference.c StructByValue.c StructLayout.c Thread.c Type.c Types.c Variadic.c
-SRCS = $(ORIG_SRCS) 
+SRCS = $(ORIG_SRCS)
 OBJS = AbstractMemory.o ArrayType.o Buffer.o Call.o ClosurePool.o DataConverter.o DynamicLibrary.o ffi.o Function.o FunctionInfo.o LastError.o LongDouble.o MappedType.o MemoryPointer.o MethodHandle.o Platform.o Pointer.o Struct.o StructByReference.o StructByValue.o StructLayout.o Thread.o Type.o Types.o Variadic.o
 HDRS = $(srcdir)/AbstractMemory.h $(srcdir)/ArrayType.h $(srcdir)/Call.h $(srcdir)/ClosurePool.h $(srcdir)/compat.h $(srcdir)/DynamicLibrary.h $(srcdir)/extconf.h $(srcdir)/Function.h $(srcdir)/LastError.h $(srcdir)/LongDouble.h $(srcdir)/MappedType.h $(srcdir)/MemoryPointer.h $(srcdir)/MethodHandle.h $(srcdir)/Platform.h $(srcdir)/Pointer.h $(srcdir)/rbffi.h $(srcdir)/rbffi_endian.h $(srcdir)/Struct.h $(srcdir)/StructByReference.h $(srcdir)/StructByValue.h $(srcdir)/Thread.h $(srcdir)/Type.h $(srcdir)/Types.h
 TARGET = ffi_c
 TARGET_NAME = ffi_c
 TARGET_ENTRY = Init_$(TARGET_NAME)
 DLLIB = $(TARGET).bundle
-EXTSTATIC = 
-STATIC_LIB = 
+EXTSTATIC =
+STATIC_LIB =
 
 TIMESTAMP_DIR = .
 BINDIR        = $(bindir)
@@ -153,7 +153,7 @@ HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 
 TARGET_SO     = $(DLLIB)
-CLEANLIBS     = $(TARGET).bundle 
+CLEANLIBS     = $(TARGET).bundle
 CLEANOBJS     = *.o  *.bak
 
 all:    $(DLLIB)

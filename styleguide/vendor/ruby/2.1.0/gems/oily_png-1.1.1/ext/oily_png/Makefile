@@ -11,12 +11,12 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0
+topdir = /Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/mason/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0
+arch_hdrdir = /Users/gwen/.rvm/rubies/ruby-2.1.1/include/ruby-2.1.0/x86_64-darwin13.0
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/mason/.rvm/rubies/ruby-2.1.1
+prefix = $(DESTDIR)/Users/gwen/.rvm/rubies/ruby-2.1.1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -72,7 +72,7 @@ empty =
 OUTFLAG = -o $(empty)
 COUTFLAG = -o $(empty)
 
-RUBY_EXTCONF_H = 
+RUBY_EXTCONF_H =
 cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3 -fno-fast-math
 debugflags = -ggdb3
@@ -80,21 +80,21 @@ warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long 
 CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe -Wall $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
-DEFS     = 
+DEFS     =
 CPPFLAGS =   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
-ldflags  = -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib 
-dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib  
-ARCH_FLAG = 
+ldflags  = -L. -fstack-protector -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
+ARCH_FLAG =
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
 AR = ar
-EXEEXT = 
+EXEEXT =
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby.2.1.0
-RUBYW_INSTALL_NAME = 
+RUBYW_INSTALL_NAME =
 RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
@@ -118,31 +118,31 @@ TOUCH = exit >
 
 #### End of system configuration section. ####
 
-preload = 
+preload =
 
 libpath = . $(libdir) /usr/local/opt/libyaml/lib /usr/local/opt/readline/lib /usr/local/opt/libksba/lib /usr/local/opt/openssl/lib
 LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
-DEFFILE = 
+DEFFILE =
 
 CLEANFILES = mkmf.log
-DISTCLEANFILES = 
-DISTCLEANDIRS = 
+DISTCLEANFILES =
+DISTCLEANDIRS =
 
-extout = 
-extout_prefix = 
+extout =
+extout_prefix =
 target_prefix = /oily_png
-LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED)  -lpthread -ldl -lobjc 
+LOCAL_LIBS =
+LIBS = $(LIBRUBYARG_SHARED)  -lpthread -ldl -lobjc
 ORIG_SRCS = color.c oily_png_ext.c operations.c png_decoding.c png_encoding.c resampling.c
-SRCS = $(ORIG_SRCS) 
+SRCS = $(ORIG_SRCS)
 OBJS = color.o oily_png_ext.o operations.o png_decoding.o png_encoding.o resampling.o
 HDRS = $(srcdir)/color.h $(srcdir)/oily_png_ext.h $(srcdir)/operations.h $(srcdir)/png_decoding.h $(srcdir)/png_encoding.h $(srcdir)/resampling.h
 TARGET = oily_png
 TARGET_NAME = oily_png
 TARGET_ENTRY = Init_$(TARGET_NAME)
 DLLIB = $(TARGET).bundle
-EXTSTATIC = 
-STATIC_LIB = 
+EXTSTATIC =
+STATIC_LIB =
 
 TIMESTAMP_DIR = .
 BINDIR        = $(bindir)
@@ -153,7 +153,7 @@ HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 
 TARGET_SO     = $(DLLIB)
-CLEANLIBS     = $(TARGET).bundle 
+CLEANLIBS     = $(TARGET).bundle
 CLEANOBJS     = *.o  *.bak
 
 all:    $(DLLIB)

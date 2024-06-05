@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Scott Kellum", "Mason Wendell"]
+  s.authors = ["Scott Kellum", "Gwen Wendell"]
   s.date = "2011-10-06"
   s.description = "Create color schemes with ease."
   s.email = ["scott@scottkellum.com"]
